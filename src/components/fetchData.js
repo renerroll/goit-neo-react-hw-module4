@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
+const API_ACCESS_KEY = atob(import.meta.env.VITE_UNSPLASH_ACCESS_KEY);
 
 axios.defaults.baseURL = "https://api.unsplash.com/";
 
